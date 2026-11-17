@@ -22,6 +22,7 @@ jobs:
         run: |
           mkdir site
           unzip -q otokei-site.zip -d site
+          cp google*.html site/ 2>/dev/null || true
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
